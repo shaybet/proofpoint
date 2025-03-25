@@ -18,11 +18,11 @@ This project consists of three Terraform modules:
 ### How to Run the Code
 1. To get the project files from GitHub, use the following command
 ```cmd
-git clone
+git clone https://github.com/shaybet/proofpoint.git
 ```
 2. Navigate to the project directory
 ```cmd
-cd proof
+cd proofpoint/proof
 ```
 3. Initialize Terraform
 ```cmd
@@ -43,5 +43,5 @@ When the Terraform apply command is successful, you will see the output with the
 You can access the web app by navigating to the URL in your browser.
 
 ### TODO
-When using a single worker node, nginx works without any issues.However, with multiple nodes, the web app becomes inaccessible.
-I would like to investigate this further and find a solution to make it work with multiple nodes.
+When using a single kind node, kind uses it for control-plane/worker and then the nginx infress works. When adding additional worker nodes the ingress stops working and web app becomes inaccessible.
+I would like to investigate this further and find a solution to make it work with multiple worker nodes.
