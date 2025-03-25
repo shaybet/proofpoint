@@ -38,7 +38,7 @@ terraform apply
 ```
 6. To connect to the Kind cluster, use the following command
 ```cmd
-export KUBECONFIG="kind-config-cluster"
+export KUBECONFIG="kind-cluster-config"
 ```
 
 ### Accessing the Web App
