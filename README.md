@@ -1,16 +1,16 @@
 # ProofPoint Assignment - Terraform Project
 
 ### Overview
-This project is a Terraform project that deploys a Kubernetes cluster using KinD, deploys nginx-ingress to route traffic to web apps without the need for specifying ports, and dynamically deploys web applications.
+This project is a Terraform project that deploys a Kubernetes cluster using Kind, deploys nginx-ingress to route traffic to web apps without the need for specifying ports, and dynamically deploys web applications.
 
 ### Requirements 
 - Terraform version `1.11.2` Installed.
 - Git installed.
-- Docker Desktop (required for KinD).
+- Docker Desktop (required for Kind).
 
 ### Project Structure
 This project consists of three Terraform modules:
-1. Deploying a KIND Cluster
+1. Deploying a Kind Cluster
 2. Deploying nginx-ingress
 3. Deploying a web app
 
@@ -39,6 +39,7 @@ terraform apply
 
 ### Accessing the Web App
 When the Terraform apply command is successful, you will see the output with the URL to access the web app.
+
 You can access the web app by navigating to the URL in your browser.
 
 ### TODO
