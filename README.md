@@ -1,0 +1,46 @@
+# ProofPoint Assignment - Terraform Project
+
+### Overview
+This project is a Terraform project that deploys a Kubernetes cluster using KinD, deploys nginx-ingress to route traffic to web apps without the need for specifying ports, and dynamically deploys web applications.
+
+### Requirements 
+- Terraform version `1.11.2` Installed.
+- Git installed.
+- Docker Desktop (required for KinD).
+
+### Project Structure
+This project consists of three Terraform modules:
+1. Deploying a KIND Cluster
+2. Deploying nginx-ingress
+3. Deploying a web app
+
+
+### How to Run the Code
+1. To get the project files from GitHub, use the following command
+```cmd
+git clone
+```
+2. Navigate to the project directory
+```cmd
+cd proof
+```
+3. Initialize Terraform
+```cmd
+terraform init
+```
+4. Create a Terraform plan
+```cmd
+terraform plan
+```
+5. Apply the Terraform plan
+```cmd
+terraform apply
+```
+
+### Accessing the Web App
+When the Terraform apply command is successful, you will see the output with the URL to access the web app.
+You can access the web app by navigating to the URL in your browser.
+
+### TODO
+When using a single worker node, nginx works without any issues.However, with multiple nodes, the web app becomes inaccessible.
+I would like to investigate this further and find a solution to make it work with multiple nodes.
