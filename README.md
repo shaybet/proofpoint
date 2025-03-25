@@ -36,6 +36,10 @@ terraform plan
 ```cmd
 terraform apply
 ```
+6. To connect to the Kind cluster, use the following command
+```cmd
+export KUBECONFIG="kind-config-kind-cluster"
+```
 
 ### Accessing the Web App
 When the Terraform apply command is successful, you will see the output with the URL to access the web app.
